@@ -38,13 +38,23 @@ h1 {
 #AboutMeContent {
     display: none;
 }
-
 .pianoimage {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.music1{
-    border: 10px solid burlywood;
+.MusicShareBar{
+    background-color: burlywood;
     border-radius: 10px;
+    font-weight: bold;
+}
+.MusicShareText{
+    color: rgb(59, 119, 148);
+    font-weight: bold;
+}
+.BackTop{
+    font-size: 50px;
+    position: fixed;
+    bottom: 30px;
+    right:60px;
 }

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>傾聽人生</title>
 </head>
 
@@ -63,15 +63,33 @@
         </div>
     </div>
     <!-- Aboout Me頁面 -->
-    <div class="container-fluid" id="AboutMeContent">
+    <div class="container" id="AboutMeContent">
         <div class="row">
-            <!-- card元件 -->
-            <div class="col-6">
+            <!-- 音樂導覽列 -->
+            <nav id="navbar-example2" class="navbar px-3 mb-3 MusicShareBar">
+                <a class="navbar-brand mx-auto" href="#">音樂分享</a>
+                <ul class="nav nav-pills mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle MusicShareText" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-expanded="false">我的收藏</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#mymusic1">One</a></li>
+                            <li><a class="dropdown-item" href="#mymusic2">Two</a></li>
+                            <li><a class="dropdown-item" href="#mymusic3">Three</a></li>
+                            <li><a class="dropdown-item" href="#mymusic4">Four</a></li>
+                            <li><a class="dropdown-item" href="#mymusic5">Five</a></li>
+                            <li><a class="dropdown-item" href="#mymusic6">Six</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- card元件第一列 -->
+            <div class="col-6" id="myself">
                 <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
                     style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="/piano.jpg" class="img-fluid rounded-start pianoimage" alt="...">
+                            <img src="piano.jpg" class="img-fluid rounded-start pianoimage" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -85,10 +103,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">          
+            <div class="col-6" id="mymusic1">
                 <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
                     style="max-width: 540px;">
-                    <div class="row g-0">                       
+                    <div class="row g-0">
                         <div class="col-md-5">
                             <div class="card-body">
                                 <h5 class="card-title">Harmonics</h5>
@@ -98,18 +116,157 @@
                         </div>
                         <div class="col-md-7">
                             <div class="ratio ratio-1x1">
-                                <iframe 
-                                    src="https://www.youtube.com/embed/c0t1aCOFHWc"
+                                <iframe class="rounded-end" src="https://www.youtube.com/embed/c0t1aCOFHWc"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen>
                                 </iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <!-- card元件第二列 -->
+            <div class="col-6"></div>
+            <div class="col-6" id="mymusic2">
+                <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
+                    style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <h5 class="card-title">Harmonics</h5>
+                                <p class="card-text">以豎琴為開頭，再來是主旋律的小提琴的加入給人一種，彷彿置身於異世界中展開一段冒險的感覺</p>
+                                <p class="card-text">再加上管樂的襯托，彷彿微風輕拂過臉頰般舒適愜意。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="ratio ratio-1x1">
+                                <iframe class="rounded-end" src="https://www.youtube.com/embed/c0t1aCOFHWc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- card元件第三列 -->
+            <div class="col-6"></div>
+            <div class="col-6" id="mymusic3">
+                <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
+                    style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <h5 class="card-title">Harmonics</h5>
+                                <p class="card-text">以豎琴為開頭，再來是主旋律的小提琴的加入給人一種，彷彿置身於異世界中展開一段冒險的感覺</p>
+                                <p class="card-text">再加上管樂的襯托，彷彿微風輕拂過臉頰般舒適愜意。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="ratio ratio-1x1">
+                                <iframe class="rounded-end" src="https://www.youtube.com/embed/c0t1aCOFHWc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- card元件測試用 -->
+            <div class="col-6"></div>
+            <div class="col-6" id="mymusic4">
+                <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
+                    style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <h5 class="card-title">Harmonics</h5>
+                                <p class="card-text">以豎琴為開頭，再來是主旋律的小提琴的加入給人一種，彷彿置身於異世界中展開一段冒險的感覺</p>
+                                <p class="card-text">再加上管樂的襯托，彷彿微風輕拂過臉頰般舒適愜意。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="ratio ratio-1x1">
+                                <iframe class="rounded-end" src="https://www.youtube.com/embed/c0t1aCOFHWc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- card元件測試用 -->
+            <div class="col-6"></div>
+            <div class="col-6" id="mymusic5">
+                <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
+                    style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <h5 class="card-title">Harmonics</h5>
+                                <p class="card-text">以豎琴為開頭，再來是主旋律的小提琴的加入給人一種，彷彿置身於異世界中展開一段冒險的感覺</p>
+                                <p class="card-text">再加上管樂的襯托，彷彿微風輕拂過臉頰般舒適愜意。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="ratio ratio-1x1">
+                                <iframe class="rounded-end" src="https://www.youtube.com/embed/c0t1aCOFHWc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- card元件測試用 -->
+            <div class="col-6"></div>
+            <div class="col-6" id="mymusic6">
+                <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
+                    style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <div class="card-body">
+                                <h5 class="card-title">Harmonics</h5>
+                                <p class="card-text">以豎琴為開頭，再來是主旋律的小提琴的加入給人一種，彷彿置身於異世界中展開一段冒險的感覺</p>
+                                <p class="card-text">再加上管樂的襯托，彷彿微風輕拂過臉頰般舒適愜意。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="ratio ratio-1x1">
+                                <iframe class="rounded-end" src="https://www.youtube.com/embed/c0t1aCOFHWc"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="BackTop">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
     </div>
+
 
 
     <script>
@@ -124,6 +281,8 @@
                 $('#HomeContent').hide();
                 $('#AboutMeContent').fadeIn(1000);
             })
+            // myself卡片滾動
+
         })
     </script>
 </body>
