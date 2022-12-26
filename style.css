@@ -2,41 +2,52 @@
     box-sizing: border-box;
     /* overflow: hidden; */
 }
+body{
+    overflow-x: hidden;
+}
 
 /* 首頁內容 */
-h3 {
-    padding-top: 6%;
+h3{
+    text-align: center;
 }
-
-nav {
+.MyNavBar{
     width: 100vw;
-    margin: 0 auto;
 }
-
 .HomeTop {
-    width: 100vw;
-    margin: 0 auto;
+    width: 101vw;
     height: 30vh;
-    /* background-image: url("piano.jpg");
+    background-image: url("pexels-jakub-novacek-924824.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     background-color: rgb(136, 186, 236);
-    border-radius: 30px; */
+    color: aliceblue;
 }
 
 #HomeContent {
     width: 100vw;
-    height: 70vh;
+    height: 64vh;
+    background-color: #ccc;
 }
 
-h1 {
+.slidebar{
     position: relative;
-    z-index: 1;
+    top: 60vh;
 }
+#slidePrev{
+    margin-top: 28vh;
+}
+#slideNext{
+    margin-top: 28vh;
+}
+  
 
 /* 關於我內容 */
 #AboutMeContent {
     display: none;
+    background-image: url("pexels-daniel-spase-734918.jpg"); 
+    background-size: 100vw 100%;
+    background-repeat: no-repeat;
 }
 .pianoimage {
     width: 100%;
@@ -47,6 +58,7 @@ h1 {
     background-color: burlywood;
     border-radius: 10px;
     font-weight: bold;
+    margin: 0 auto;
 }
 .MusicShareText{
     color: rgb(59, 119, 148);

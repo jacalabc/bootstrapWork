@@ -23,15 +23,15 @@
 <body>
 
     <!-- 導覽列 -->
-    <div class="HomeTop container-fluid">
-        <h3 class="d-flex justify-content-center align-items-center">
+    <div class="HomeTop container-fluid row align-items-center">
+        <h3>
             <i class="fa-solid fa-music"></i>
-            音樂小站
+            你把生命旋律給了我，我用理想把他譜成一首歌
             <i class="fa-solid fa-guitar"></i>
         </h3>
     </div>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-        <div class="container-fluid">
+    <nav class="navbar navbar-dark bg-secondary navbar-expand MyNavBar">
+        <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,20 +53,50 @@
     </nav>
     <!-- Home頁面 -->
     <div class="container-fluid" id="HomeContent">
-        <div class="row">
-            <div class="col-6">
-                左邊
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators slidebar">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="col-6">
-                右邊
+            <div class="carousel-inner">
+              <div class="carousel-item active pic1">
+                <img src="pexels-pixabay-210764.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pexels-pixabay-433155.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="pexels-rakicevic-nenad-1274260.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
             </div>
-        </div>
+            <button class="carousel-control-prev" id="slidePrev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" id="slideNext" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </div>
     <!-- Aboout Me頁面 -->
-    <div class="container" id="AboutMeContent">
+    <div class="container-fluid" id="AboutMeContent">
         <div class="row">
             <!-- 音樂導覽列 -->
-            <nav id="navbar-example2" class="navbar px-3 mb-3 MusicShareBar">
+            <nav id="navbar-example2" class="navbar px-3 mb-3 MusicShareBar col-8">
                 <a class="navbar-brand mx-auto" href="#">音樂分享</a>
                 <ul class="nav nav-pills mx-auto">
                     <li class="nav-item dropdown">
@@ -84,7 +114,8 @@
                 </ul>
             </nav>
             <!-- card元件第一列 -->
-            <div class="col-6" id="myself">
+            <!-- about me 卡面 滿版 -->
+            <div class="col-12" id="myself">
                 <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
                     style="max-width: 540px;">
                     <div class="row g-0">
@@ -103,7 +134,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6" id="mymusic1">
+            <div class="col-8" id="mymusic1">
                 <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
                     style="max-width: 540px;">
                     <div class="row g-0">
@@ -129,8 +160,9 @@
         </div>
         <div class="row">
             <!-- card元件第二列 -->
-            <div class="col-6"></div>
-            <div class="col-6" id="mymusic2">
+            <!-- col-4 撐開版面排版-->
+            <div class="col-4"></div>
+            <div class="col-8" id="mymusic2">
                 <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
                     style="max-width: 540px;">
                     <div class="row g-0">
@@ -156,8 +188,7 @@
         </div>
         <div class="row">
             <!-- card元件第三列 -->
-            <div class="col-6"></div>
-            <div class="col-6" id="mymusic3">
+            <div class="col-8" id="mymusic3">
                 <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
                     style="max-width: 540px;">
                     <div class="row g-0">
@@ -183,8 +214,9 @@
         </div>
         <div class="row">
             <!-- card元件測試用 -->
-            <div class="col-6"></div>
-            <div class="col-6" id="mymusic4">
+            <!-- col-4 撐開版面排版-->
+            <div class="col-4"></div>
+            <div class="col-8" id="mymusic4">
                 <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
                     style="max-width: 540px;">
                     <div class="row g-0">
@@ -210,8 +242,7 @@
         </div>
         <div class="row">
             <!-- card元件測試用 -->
-            <div class="col-6"></div>
-            <div class="col-6" id="mymusic5">
+            <div class="col-8" id="mymusic5">
                 <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
                     style="max-width: 540px;">
                     <div class="row g-0">
@@ -237,8 +268,9 @@
         </div>
         <div class="row">
             <!-- card元件測試用 -->
-            <div class="col-6"></div>
-            <div class="col-6" id="mymusic6">
+            <!-- col-4 撐開版面排版-->
+            <div class="col-4"></div>
+            <div class="col-8" id="mymusic6">
                 <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
                     style="max-width: 540px;">
                     <div class="row g-0">
