@@ -12,43 +12,52 @@ h3{
 }
 .MyNavBar{
     width: 100vw;
+    position: relative;
+    z-index: 1;
 }
 .HomeTop {
-    width: 101vw;
+    width: 105vw;
     height: 30vh;
-    background-image: url("pexels-jakub-novacek-924824.jpg");
+    background-image: url("/image/pexels-jakub-novacek-924824.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: rgb(136, 186, 236);
     color: aliceblue;
 }
 
 #HomeContent {
     width: 100vw;
     height: 64vh;
-    background-color: #ccc;
+    background-color: black;
+    overflow: hidden;
 }
+
+.HomePic1Text{
+    color: black;
+}
+
 
 .slidebar{
     position: relative;
-    top: 60vh;
+    top: 64vh;
 }
-#slidePrev{
-    margin-top: 28vh;
+.HomePic{
+    margin-top: -40px;
+    margin-left: -13px;
+    margin-right: -13px;
 }
-#slideNext{
-    margin-top: 28vh;
-}
+
   
 
 /* 關於我內容 */
 #AboutMeContent {
     display: none;
-    background-image: url("pexels-daniel-spase-734918.jpg"); 
+    background-image: url("/image/pexels-daniel-spase-734918.jpg"); 
     background-size: 100vw 100%;
     background-repeat: no-repeat;
 }
+
+
 .pianoimage {
     width: 100%;
     height: 100%;
