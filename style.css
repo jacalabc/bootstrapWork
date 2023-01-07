@@ -13,7 +13,7 @@ h3{
 .HomeTop {
     width: 105vw;
     height: 30vh;
-    background-image: url("/image/pexels-jakub-novacek-924824.jpg");
+    background-image: url("./image/pexels-jakub-novacek-924824.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -47,7 +47,7 @@ h3{
 /* 關於我內容 */
 #AboutMeContent {
     display: none;
-    background-image: url("/image/pexels-daniel-spase-734918.jpg"); 
+    background-image: url("./image/pexels-daniel-spase-734918.jpg"); 
     background-size: 100vw 100%;
     background-repeat: no-repeat;
 }
@@ -74,7 +74,7 @@ h3{
     bottom: 30px;
     right:60px;
 }
-/* Weather內容 */
-#WeatherContent{
+/* Concert內容 */
+#ConcertContent{
     display: none;
 }
