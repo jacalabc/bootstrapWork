@@ -10,11 +10,6 @@ body{
 h3{
     text-align: center;
 }
-.MyNavBar{
-    width: 100vw;
-    position: relative;
-    z-index: 1;
-}
 .HomeTop {
     width: 105vw;
     height: 30vh;
@@ -78,4 +73,8 @@ h3{
     position: fixed;
     bottom: 30px;
     right:60px;
+}
+/* Weather內容 */
+#WeatherContent{
+    display: none;
 }
