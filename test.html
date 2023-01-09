@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- datatable的css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
     <!-- 自己的css -->
     <link rel="stylesheet" href="style.css">
     <title>傾聽人生</title>
@@ -53,8 +55,8 @@
     </nav>
     <!-- Home頁面 -->
     <div class="container-fluid" id="HomeContent">
-        <div id="carouselExampleCaptions" class="carousel slide HomePic" data-bs-ride="carousel">
-            <!-- <div id="carouselExampleCaptions" class="carousel slide HomePic" data-bs-ride="false"> -->
+        <!-- <div id="carouselExampleCaptions" class="carousel slide HomePic" data-bs-ride="carousel"> -->
+        <div id="carouselExampleCaptions" class="carousel slide HomePic" data-bs-ride="false">
             <div class="carousel-indicators slidebar">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -67,21 +69,21 @@
                 <div class="carousel-item active" data-bs-interval="5000">
                     <img src="./image/pexels-pixabay-210764.jpg" style="height:65vh;" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block HomePic1Text">
-                        <h5>歡迎來到我的音樂分享天地</h5>
+                        <p class="bigText">歡迎來到我的音樂分享天地</p>
                         <p>用音樂回想自己的青春，讓音樂在青春中迴響。</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval=5000">
                     <img src="./image/pexels-pixabay-433155.jpg" style="height:65vh;" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block HomePic2Text">
-                        <h5>不同時期的音樂收藏，彷彿日記般記錄著當時的情景</h5>
+                        <p class="bigText">不同時期的音樂收藏，彷彿日記般記錄著當時的情景</p>
                         <p>音樂是人類情感的主宰。</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
                     <img src="./image//pexels-pixabay-355887.jpg" style="height:65vh;" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block HomePic3Text">
-                        <h5>邀請你一起聆聽我收藏的點點滴滴</h5>
+                        <p class="bigText">邀請你一起聆聽我收藏的點點滴滴</p>
                         <p>跟上時代的節奏，演繹未來的韻律。</p>
                     </div>
                 </div>
@@ -103,7 +105,7 @@
         <div class="row">
             <!-- 音樂導覽列 -->
             <nav id="navbar-example2" class="navbar px-3 mb-3 MusicShareBar col-8">
-                <a class="navbar-brand mx-auto" href="#">音樂分享</a>
+                <a class="navbar-brand mx-auto">音樂分享</a>
                 <ul class="nav nav-pills mx-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle MusicShareText" data-bs-toggle="dropdown" href="#"
@@ -172,7 +174,7 @@
                     style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-5">
-                            <div class="card-body">                               
+                            <div class="card-body">
                                 <h5 class="card-title">WILL</h5>
                                 <p class="card-text">紫羅蘭永恆花園電影版</p>
                                 <p class="card-text">感謝京都動畫為這世界帶來如此珍貴且優秀的作品</p>
@@ -180,13 +182,14 @@
                             </div>
                         </div>
                         <div class="col-md-7">
-                            <div class="ratio ratio-1x1">                               
-                                    <div class="ratio ratio-1x1">
-                                        <iframe class="rounded-end" width="560" height="315" src="https://www.youtube.com/embed/QJfXc0YZkT8"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen></iframe>
-                                    </div>
+                            <div class="ratio ratio-1x1">
+                                <div class="ratio ratio-1x1">
+                                    <iframe class="rounded-end" width="560" height="315"
+                                        src="https://www.youtube.com/embed/QJfXc0YZkT8" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -213,7 +216,7 @@
                                     src="https://www.youtube.com/embed/HcaAPVqbqbA" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>                                
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -292,43 +295,50 @@
                         <div class="col-md-7">
                             <div class="ratio ratio-1x1">
                                 <iframe class="rounded-end" width="560" height="315"
-                                src="https://www.youtube.com/embed/ecy55dyL2Co" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                                    src="https://www.youtube.com/embed/ecy55dyL2Co" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <footer class="copyRight">此網站音樂僅供學習用途，並無營利之用。</footer>
         <a href="#" class="BackTop">
             <i class="fa-solid fa-chevron-up"></i>
         </a>
     </div>
     <!-- Concert頁面 -->
     <div class="container-fluid" id="ConcertContent">
-        <table id="example" class="display" style="width:100%">
+        <table id="table_id" class="display">
             <thead>
                 <tr>
-                    <th>Name</th>
+                    <th>活動名稱</th>
+                    <th>場地名稱</th>
+                    <th>地址</th>
+                    <th>售票網址</th>
                 </tr>
             </thead>
             <tbody>
                 <!-- <tr>
-                    <td>Tiger Nixon</td>
-                    <td>System Architect</td>
-                    <td>Edinburgh</td>
-                    <td>61</td>
-                    <td>2011-04-25</td>
-                    <td>$320,800</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr> -->
+            </tbody>
         </table>
     </div>
 
+    <!-- datatable的jQuery -->
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+
     <script>
         $(function () {
-            
+
             // Home 頁面淡入
             $('#HomeBtn').click(function () {
                 $('#AboutMeContent').hide();
@@ -342,13 +352,77 @@
                 $('#AboutMeContent').fadeIn(1000);
             });
             // Concert 頁面淡入
-            $('#ConcertBtn').click(function(){
+            $('#ConcertBtn').click(function () {
                 $('#HomeContent').hide();
                 $('#AboutMeContent').hide();
-                $('#ConcertContent').fadeIn(1000);                
+                $('#ConcertContent').fadeIn(1000);
             });
             // Concert表格
-            
+            const tbody = $('tbody');
+            $.ajax({
+                type: "get",
+                url: "./json/concert.json",
+                data: "data",
+                dataType: "json",
+                success: function (concertData) {
+                    let data = concertData;
+                    console.log(data);
+                    // console.log(data[0].title);
+                    // console.log(data[0].showInfo[0].locationName);
+                    // console.log(data[0].showInfo[0].location);
+                    // console.log(data[0].webSales);
+
+                    // console.log(data[1].title);
+                    // console.log(data[1].showInfo[0].locationName);
+                    // console.log(data[1].showInfo[0].location);
+                    // console.log(data[1].webSales);
+
+                    // console.log(data[2].title);
+                    // console.log(data[2].showInfo[0].locationName);
+                    // console.log(data[2].showInfo[0].location);
+                    // console.log(data[2].webSales);
+
+                    // 活動名稱
+                    const title0 = data[0].title;
+                    const title1 = data[1].title;
+                    const title2 = data[2].title;
+                    // console.log('綁定',title0);
+                    // console.log('綁定',title1);
+                    // console.log('綁定',title2);
+                    // 場地名稱
+                    const locationName0 = data[0].showInfo[0].locationName;
+                    const locationName1 = data[1].showInfo[0].locationName;
+                    const locationName2 = data[2].showInfo[0].locationName;
+                    // console.log('綁定',locationName0);
+                    // console.log('綁定',locationName1);
+                    // console.log('綁定',locationName2);
+                    // 地址
+                    const address0 = data[0].showInfo[0].location;
+                    const address1 = data[1].showInfo[0].location;
+                    const address2 = data[2].showInfo[0].location;
+                    // console.log(address0);
+                    // console.log(address1);
+                    // console.log(address2);
+                    // 售票網址
+                    const sale0 = data[0].webSales;
+                    const sale1 = data[1].webSales;
+                    const sale2 = data[2].webSales;
+                    // console.log(sale0);
+                    // console.log(sale1);
+                    // console.log(sale2);
+                    let TableConcent = '';
+                    $.each(concertData,function(key,value){
+                        TableConcent += `<tr>
+                                            <td>${value.title}</td>
+                                            <td>${value.locationName}</td>
+                                            <td>${value.location}</td>
+                                            <td><a>${value.webSales}</a></td>
+                                        </tr>`
+                    });
+                    tbody.append(TableConcent);
+                    $('#table_id').DataTable();
+                }
+            })
         });
     </script>
 </body>
