@@ -7,14 +7,16 @@ h3{
     text-align: center;
 }
 .HomeTop {
-    width: 105vw;
+    width: 100vw;
     height: 30vh;
     background-image: url("./image/pexels-jakub-novacek-924824.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: auto;
     color: aliceblue;
 }
+
 
 #HomeBtn:hover{
     cursor: pointer;
@@ -24,7 +26,6 @@ h3{
 #HomeContent {
     width: 100vw;
     height: 64vh;
-    background-color: black;
     overflow: hidden;
 }
 
@@ -33,24 +34,24 @@ h3{
 }
 
 .HomePic1Text{
-    color: black;
-    backdrop-filter: blur(5px);
+    color: rgb(191, 124, 0);
     border-radius: 30px;
-    bottom: 0px;
+    backdrop-filter: blur(5px);
+    bottom: 120px;
     font-size: 30px;
 }
 
 .HomePic2Text{
-    backdrop-filter: blur(5px);
     border-radius: 30px;
-    bottom: 0px;
+    backdrop-filter: blur(5px);
+    bottom: 120px;
     font-size: 30px;
 }
 
 .HomePic3Text{
     backdrop-filter: blur(5px);
     border-radius: 30px;
-    bottom: 0px;
+    bottom: 120px;
     font-size: 30px;
 }
 
@@ -97,12 +98,16 @@ h3{
 }
 
 .copyRight{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    text-align: center;
     backdrop-filter: blur(10px);
     color:black;
     font-size: 30px;
-    position: fixed;
-    bottom: 0px;
-    right: 700px;
 }
 
 .BackTop{
@@ -121,7 +126,12 @@ h3{
     display: none;
     width: 100vw;
     height: 64vh;
-    background-color: burlywood;
+    background-color: burlywood;   
+}
+
+.ConcertInfo{
+    font-size: 50px;
+    text-align: center;
 }
 
 .ConcertTable{
@@ -130,4 +140,12 @@ h3{
     height: 250px;
     text-align: center;
     vertical-align: middle;
+}
+@media (max-width: 768px) {
+    .ConcertTable{
+        width: 100vw;
+        height: fit-content;
+        display: block;
+        overflow-x: auto;
+    }
 }
