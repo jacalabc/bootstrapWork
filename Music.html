@@ -338,18 +338,27 @@
 
             // Home 頁面淡入
             $('#HomeBtn').click(function () {
+                $('#HomeBtn').css('color','yellow');
+                $('#AboutMeBtn').css('color','');
+                $('#ConcertBtn').css('color','');
                 $('#AboutMeContent').hide();
                 $('#ConcertContent').hide();
                 $('#HomeContent').fadeIn(1000);
             });
             // Aboout Me 頁面淡入
             $('#AboutMeBtn').click(function () {
+                $('#AboutMeBtn').css('color','yellow');
+                $('#HomeBtn').css('color','');
+                $('#ConcertBtn').css('color','');
                 $('#HomeContent').hide();
                 $('#ConcertContent').hide();
                 $('#AboutMeContent').fadeIn(1000);
             });
             // Concert 頁面淡入
             $('#ConcertBtn').click(function () {
+                $('#ConcertBtn').css('color','yellow');
+                $('#HomeBtn').css('color','');
+                $('#AboutMeBtn').css('color','');
                 $('#HomeContent').hide();
                 $('#AboutMeContent').hide();
                 $('#ConcertContent').fadeIn(1000);
