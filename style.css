@@ -116,37 +116,3 @@ h3{
     bottom: 30px;
     right:60px;
 }
-
-/* Concert內容 */
-#ConcertBtn:hover{
-    cursor: pointer;
-    color: yellow;
-}
-
-#ConcertContent{
-    display: none;
-    width: 100vw;
-    height: 64vh;
-    background-color: burlywood;   
-}
-
-.ConcertInfo{
-    font-size: 50px;
-    text-align: center;
-}
-
-.ConcertTable{
-    width: 100vw;
-    margin-left: -12px;
-    height: 250px;
-    text-align: center;
-    vertical-align: middle;
-}
-@media (max-width: 768px) {
-    .ConcertTable{
-        width: 100vw;
-        height: fit-content;
-        display: block;
-        overflow-x: auto;
-    }
-}

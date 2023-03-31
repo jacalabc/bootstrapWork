@@ -44,9 +44,6 @@
                     <li class="nav-item">
                         <a class="nav-link" id="AboutMeBtn">About Me</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="ConcertBtn">Concert</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -308,85 +305,27 @@
             <i class="fa-solid fa-chevron-up"></i>
         </a>
     </div>
-    <!-- Concert頁面 -->
-    <div class="container-fluid" id="ConcertContent">
-        <div class="ConcertInfo">
-            表演資訊
-        </div>
-        <table class="table table-dark table-striped table-hover ConcertTable">
-            <thead>
-                <tr>
-                    <th scope="col">活動名稱</th>
-                    <th scope="col">場地名稱</th>
-                    <th scope="col">地址</th>
-                    <th scope="col">售票網址</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- <tr>
-                <th></th>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr> -->
-            </tbody>
-        </table>
-    </div>
 
     <script>
         $(function () {
-
             // Home 頁面淡入
             $('#HomeBtn').click(function () {
                 $('#HomeBtn').css('color','yellow');
                 $('#AboutMeBtn').css('color','');
-                $('#ConcertBtn').css('color','');
                 $('#AboutMeContent').hide();
-                $('#ConcertContent').hide();
                 $('#HomeContent').fadeIn(1000);
             });
             // Aboout Me 頁面淡入
             $('#AboutMeBtn').click(function () {
                 $('#AboutMeBtn').css('color','yellow');
                 $('#HomeBtn').css('color','');
-                $('#ConcertBtn').css('color','');
                 $('#HomeContent').hide();
-                $('#ConcertContent').hide();
                 $('#AboutMeContent').fadeIn(1000);
             });
-            // Concert 頁面淡入
-            $('#ConcertBtn').click(function () {
-                $('#ConcertBtn').css('color','yellow');
-                $('#HomeBtn').css('color','');
-                $('#AboutMeBtn').css('color','');
-                $('#HomeContent').hide();
-                $('#AboutMeContent').hide();
-                $('#ConcertContent').fadeIn(1000);
-            });
-            // Concert表格
-            const tbody = $('tbody');
-            $.ajax({
-                type: "get",
-                url: "./json/concert.json",
-                data: "data",
-                dataType: "json",
-                success: function (concertData) {
-                    let data = concertData;
-                    console.log(data);
-                    let TableConcent = '';
-                    $.each(concertData, function (key, value) {
-                        TableConcent += `<tr>
-                                            <td>${value.title}</td>
-                                            <td>${value.showInfo[0].locationName}</td>
-                                            <td>${value.showInfo[0].location}</td>
-                                            <td><a href='${value.webSales}' target='_blank'>售票連結</a></td>
-                                        </tr>`
-                    });
-                    tbody.append(TableConcent);
-                }
-            })
-        });
+        });       
     </script>
+
+
 </body>
 
 </html>
