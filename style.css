@@ -1,5 +1,5 @@
 body {
-    overflow-x: hidden;
+    overflow-x: hidden;  
 }
 
 /* 首頁內容 */
@@ -81,10 +81,18 @@ h3 {
     background-size: 100vw 100%;
     background-repeat: no-repeat; */
     display: none;
+    position: relative;
+}
+
+#A{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: #e5a840;
-    background-size: 100vw 100%;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
 }
 
 .pianoimage {
