@@ -2,328 +2,331 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
-        integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- 自己的css -->
-    <link rel="stylesheet" href="style.css">
-    <title>傾聽人生</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+    integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- particles.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
+    integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 自己的css -->
+  <link rel="stylesheet" href="style.css">
+  <title>傾聽人生</title>
 </head>
 
 <body>
-    <!-- 導覽列 -->
-    <div class="HomeTop container-fluid row align-items-center">
-        <h3>
-            <i class="fa-solid fa-music"></i>
-            你把生命旋律給了我，我用理想把他譜成一首歌
-            <i class="fa-solid fa-guitar"></i>
-        </h3>
+  <!-- 導覽列 -->
+  <div class="HomeTop container-fluid row align-items-center">
+    <h3>
+      <i class="fa-solid fa-music"></i>
+      你把生命旋律給了我，我用理想把他譜成一首歌
+      <i class="fa-solid fa-guitar"></i>
+    </h3>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-secondary navbar-dark NavList">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" id="HomeBtn">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="AboutMeBtn">About Me</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark NavList">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" id="HomeBtn">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="AboutMeBtn">About Me</a>
-                    </li>
-                </ul>
-            </div>
+  </nav>
+  <!-- Home頁面 -->
+  <div class="container-fluid" id="HomeContent">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade HomePic" data-bs-ride="carousel">
+      <!-- <div id="carouselExampleCaptions" class="carousel slide HomePic" data-bs-ride="false"> -->
+      <div class="carousel-indicators slidebar">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="./image/pexels-pixabay-210764.jpg" style="height:65vh;" class="d-block w-100" alt="...">
+          <div class="carousel-caption HomePic1Text">
+            <p class="bigText">歡迎來到我的音樂分享天地</p>
+            <p>用音樂回想自己的青春，讓音樂在青春中迴響。</p>
+          </div>
         </div>
-    </nav>
-    <!-- Home頁面 -->
-    <div class="container-fluid" id="HomeContent">
-        <div id="carouselExampleCaptions" class="carousel slide carousel-fade HomePic" data-bs-ride="carousel">
-            <!-- <div id="carouselExampleCaptions" class="carousel slide HomePic" data-bs-ride="false"> -->
-            <div class="carousel-indicators slidebar">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="./image/pexels-pixabay-210764.jpg" style="height:65vh;" class="d-block w-100" alt="...">
-                    <div class="carousel-caption HomePic1Text">
-                        <p class="bigText">歡迎來到我的音樂分享天地</p>
-                        <p>用音樂回想自己的青春，讓音樂在青春中迴響。</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval=5000">
-                    <img src="./image/pexels-pixabay-433155.jpg" style="height:65vh;" class="d-block w-100" alt="...">
-                    <div class="carousel-caption HomePic2Text">
-                        <p class="bigText">不同時期的音樂收藏，彷彿日記般記錄著當時的情景</p>
-                        <p>音樂是人類情感的主宰。</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img src="./image//pexels-pixabay-355887.jpg" style="height:65vh;" class="d-block w-100" alt="...">
-                    <div class="carousel-caption HomePic3Text">
-                        <p class="bigText">邀請你一起聆聽我收藏的點點滴滴</p>
-                        <p>跟上時代的節奏，演繹未來的韻律。</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next BtnNext" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        <div class="carousel-item" data-bs-interval=5000">
+          <img src="./image/pexels-pixabay-433155.jpg" style="height:65vh;" class="d-block w-100" alt="...">
+          <div class="carousel-caption HomePic2Text">
+            <p class="bigText">不同時期的音樂收藏，彷彿日記般記錄著當時的情景</p>
+            <p>音樂是人類情感的主宰。</p>
+          </div>
         </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="./image//pexels-pixabay-355887.jpg" style="height:65vh;" class="d-block w-100" alt="...">
+          <div class="carousel-caption HomePic3Text">
+            <p class="bigText">邀請你一起聆聽我收藏的點點滴滴</p>
+            <p>跟上時代的節奏，演繹未來的韻律。</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next BtnNext" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <!-- Aboout Me頁面 -->
-    <div class="container-fluid" id="AboutMeContent">
+  </div>
+  <!-- Aboout Me頁面 -->
+  <div class="container-fluid" id="AboutMeContent">
+
+
         <div class="row">
-            <!-- 音樂導覽列 -->
-            <nav id="navbar-example2" class="navbar px-3 mb-3 MusicShareBar col-8">
-                <a class="navbar-brand mx-auto">音樂分享</a>
-                <ul class="nav nav-pills mx-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle MusicShareText" data-bs-toggle="dropdown" href="#"
-                            role="button" aria-expanded="false">我的收藏</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#mymusic1">Harmonics</a></li>
-                            <li><a class="dropdown-item" href="#mymusic2">Will</a></li>
-                            <li><a class="dropdown-item" href="#mymusic3">Viator</a></li>
-                            <li><a class="dropdown-item" href="#mymusic4">Lilium</a></li>
-                            <li><a class="dropdown-item" href="#mymusic5">Rust</a></li>
-                            <li><a class="dropdown-item" href="#mymusic6">toutou</a></li>
-                        </ul>
-                    </li>
+          <!-- 音樂導覽列 -->
+          <nav id="navbar-example2" class="navbar px-3 mb-3 MusicShareBar col-8">
+            <a class="navbar-brand mx-auto">音樂分享</a>
+            <ul class="nav nav-pills mx-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle MusicShareText" data-bs-toggle="dropdown" href="#" role="button"
+                  aria-expanded="false">我的收藏</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#mymusic1">Harmonics</a></li>
+                  <li><a class="dropdown-item" href="#mymusic2">Will</a></li>
+                  <li><a class="dropdown-item" href="#mymusic3">Viator</a></li>
+                  <li><a class="dropdown-item" href="#mymusic4">Lilium</a></li>
+                  <li><a class="dropdown-item" href="#mymusic5">Rust</a></li>
+                  <li><a class="dropdown-item" href="#mymusic6">toutou</a></li>
                 </ul>
-            </nav>
-            <!-- card元件第一列 -->
-            <!-- about me 卡面 滿版 -->
-            <div class="col-12" id="myself">
-                <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
-                    style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="./image/piano.jpg" class="img-fluid rounded-start pianoimage" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">關於我</h5>
-                                <p class="card-text">平時的興趣是閱讀輕小說與聽音樂，同時也會彈鋼琴作為休閒。</p>
-                                <p class="card-text">對於音樂的接受度很廣，最喜歡以鋼琴及小提琴為伴奏基底的音樂。</p>
-                                <p class="card-text">目前正在努力學習程式，喜歡一邊聆聽自己的音樂收藏一邊處理事情。</p>
-                            </div>
-                        </div>
-                    </div>
+              </li>
+            </ul>
+          </nav>
+          <!-- card元件第一列 -->
+          <!-- about me 卡面 滿版 -->
+          <div class="col-12" id="myself">
+            <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./image/piano.jpg" class="img-fluid rounded-start pianoimage" alt="...">
                 </div>
-            </div>
-            <div class="col-8" id="mymusic1">
-                <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
-                    style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-5">
-                            <div class="card-body">
-                                <h5 class="card-title">Harmonics</h5>
-                                <p class="card-text">以豎琴為開頭，再來是主旋律的小提琴的加入給人一種，彷彿置身於異世界中展開一段冒險的感覺</p>
-                                <p class="card-text">再加上管樂的襯托，彷彿微風輕拂過臉頰般舒適愜意。</p>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="ratio ratio-1x1">
-                                <iframe class="rounded-end" src="https://www.youtube.com/embed/c0t1aCOFHWc"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">關於我</h5>
+                    <p class="card-text">平時的興趣是閱讀輕小說與聽音樂，同時也會彈鋼琴作為休閒。</p>
+                    <p class="card-text">對於音樂的接受度很廣，最喜歡以鋼琴及小提琴為伴奏基底的音樂。</p>
+                    <p class="card-text">目前正在努力學習程式，喜歡一邊聆聽自己的音樂收藏一邊處理事情。</p>
+                  </div>              
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="col-8" id="mymusic1">
+            <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h5 class="card-title">Harmonics</h5>
+                    <p class="card-text">以豎琴為開頭，再來是主旋律的小提琴的加入給人一種，彷彿置身於異世界中展開一段冒險的感覺</p>
+                    <p class="card-text">再加上管樂的襯托，彷彿微風輕拂過臉頰般舒適愜意。</p>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="ratio ratio-1x1">
+                    <iframe class="rounded-end" src="https://www.youtube.com/embed/c0t1aCOFHWc" title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="row">
-            <!-- card元件第二列 -->
-            <!-- col-4 撐開版面排版-->
-            <div class="col-4"></div>
-            <div class="col-8" id="mymusic2">
-                <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
-                    style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-5">
-                            <div class="card-body">
-                                <h5 class="card-title">WILL</h5>
-                                <p class="card-text">紫羅蘭永恆花園電影版</p>
-                                <p class="card-text">感謝京都動畫為這世界帶來如此珍貴且優秀的作品</p>
-                                <p class="card-text">謝謝你們</p>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="ratio ratio-1x1">
-                                <div class="ratio ratio-1x1">
-                                    <iframe class="rounded-end" width="560" height="315"
-                                        src="https://www.youtube.com/embed/QJfXc0YZkT8" title="YouTube video player"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          <!-- card元件第二列 -->
+          <!-- col-4 撐開版面排版-->
+          <div class="col-4"></div>
+          <div class="col-8" id="mymusic2">
+            <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h5 class="card-title">WILL</h5>
+                    <p class="card-text">紫羅蘭永恆花園電影版</p>
+                    <p class="card-text">感謝京都動畫為這世界帶來如此珍貴且優秀的作品</p>
+                    <p class="card-text">謝謝你們</p>
+                  </div>
                 </div>
+                <div class="col-md-7">
+                  <div class="ratio ratio-1x1">
+                    <div class="ratio ratio-1x1">
+                      <iframe class="rounded-end" width="560" height="315" src="https://www.youtube.com/embed/QJfXc0YZkT8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
         <div class="row">
-            <!-- card元件第三列 -->
-            <div class="col-8" id="mymusic3">
-                <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
-                    style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-5">
-                            <div class="card-body">
-                                <h5 class="card-title">toutou</h5>
-                                <h5 class="card-title">Viator</h5>
-                                <p class="card-text">於離別之朝束起約定之花 主題曲</p>
-                                <p class="card-text">溫馨感人的催淚電影</p>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="ratio ratio-1x1">
-                                <iframe class="rounded-end" width="560" height="315"
-                                    src="https://www.youtube.com/embed/HcaAPVqbqbA" title="YouTube video player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
+          <!-- card元件第三列 -->
+          <div class="col-8" id="mymusic3">
+            <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h5 class="card-title">toutou</h5>
+                    <h5 class="card-title">Viator</h5>
+                    <p class="card-text">於離別之朝束起約定之花 主題曲</p>
+                    <p class="card-text">溫馨感人的催淚電影</p>
+                  </div>
                 </div>
+                <div class="col-md-7">
+                  <div class="ratio ratio-1x1">
+                    <iframe class="rounded-end" width="560" height="315" src="https://www.youtube.com/embed/HcaAPVqbqbA"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
         <div class="row">
-            <!-- card元件第四列 -->
-            <!-- col-4 撐開版面排版-->
-            <div class="col-4"></div>
-            <div class="col-8" id="mymusic4">
-                <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
-                    style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-5">
-                            <div class="card-body">
-                                <h5 class="card-title">Lilium</h5>
-                                <p class="card-text">妖精的旋律OP</p>
-                                <p class="card-text">致鬱系神作</p>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="ratio ratio-1x1">
-                                <iframe class="rounded-end" width="560" height="315"
-                                    src="https://www.youtube.com/embed/cZE5mFo0MGw" title="YouTube video player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
+          <!-- card元件第四列 -->
+          <!-- col-4 撐開版面排版-->
+          <div class="col-4"></div>
+          <div class="col-8" id="mymusic4">
+            <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h5 class="card-title">Lilium</h5>
+                    <p class="card-text">妖精的旋律OP</p>
+                    <p class="card-text">致鬱系神作</p>
+                  </div>
                 </div>
+                <div class="col-md-7">
+                  <div class="ratio ratio-1x1">
+                    <iframe class="rounded-end" width="560" height="315" src="https://www.youtube.com/embed/cZE5mFo0MGw"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
         <div class="row">
-            <!-- card元件第五列 -->
-            <div class="col-8" id="mymusic5">
-                <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
-                    style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-5">
-                            <div class="card-body">
-                                <h5 class="card-title">Rust</h5>
-                                <p class="card-text">最後兩首Rust以及toutou</p>
-                                <p class="card-text">有時我會在youtube上尋找以前上傳的音樂</p>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="ratio ratio-1x1">
-                                <iframe class="rounded-end" width="560" height="315"
-                                    src="https://www.youtube.com/embed/Jio_0vQCAZU" title="YouTube video player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
+          <!-- card元件第五列 -->
+          <div class="col-8" id="mymusic5">
+            <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h5 class="card-title">Rust</h5>
+                    <p class="card-text">最後兩首Rust以及toutou</p>
+                    <p class="card-text">有時我會在youtube上尋找以前上傳的音樂</p>
+                  </div>
                 </div>
+                <div class="col-md-7">
+                  <div class="ratio ratio-1x1">
+                    <iframe class="rounded-end" width="560" height="315" src="https://www.youtube.com/embed/Jio_0vQCAZU"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
         <div class="row">
-            <!-- card元件第六列 -->
-            <!-- col-4 撐開版面排版-->
-            <div class="col-4"></div>
-            <div class="col-8" id="mymusic6">
-                <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle"
-                    style="max-width: 540px;">
-                    <div class="row g-0">
-                        <div class="col-md-5">
-                            <div class="card-body">
-                                <h5 class="card-title">toutou</h5>
-                                <p class="card-text">這就像尋找古董一樣，總會有不同驚喜</p>
-                                <p class="card-text">謝謝你們耐心觀看</p>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="ratio ratio-1x1">
-                                <iframe class="rounded-end" width="560" height="315"
-                                    src="https://www.youtube.com/embed/ecy55dyL2Co" title="YouTube video player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
+          <!-- card元件第六列 -->
+          <!-- col-4 撐開版面排版-->
+          <div class="col-4"></div>
+          <div class="col-8" id="mymusic6">
+            <div class="card mb-3 mt-3 position-relative top-50 start-50 translate-middle" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <div class="card-body">
+                    <h5 class="card-title">toutou</h5>
+                    <p class="card-text">這就像尋找古董一樣，總會有不同驚喜</p>
+                    <p class="card-text">謝謝你們耐心觀看</p>
+                  </div>
                 </div>
+                <div class="col-md-7">
+                  <div class="ratio ratio-1x1">
+                    <iframe class="rounded-end" width="560" height="315" src="https://www.youtube.com/embed/ecy55dyL2Co"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
         <footer class="copyRight">此網站音樂僅供學習用途，並無營利之用。</footer>
         <a href="#" class="BackTop">
-            <i class="fa-solid fa-chevron-up"></i>
+          <i class="fa-solid fa-chevron-up"></i>
         </a>
-    </div>
 
-    <script>
-        $(function () {
-            // Home 頁面淡入
-            $('#HomeBtn').click(function () {
-                $('#HomeBtn').css('color','yellow');
-                $('#AboutMeBtn').css('color','');
-                $('#AboutMeContent').hide();
-                $('#HomeContent').fadeIn(1000);
-            });
-            // Aboout Me 頁面淡入
-            $('#AboutMeBtn').click(function () {
-                $('#AboutMeBtn').css('color','yellow');
-                $('#HomeBtn').css('color','');
-                $('#HomeContent').hide();
-                $('#AboutMeContent').fadeIn(1000);
-            });
-        });       
-    </script>
+
+
+      
+      
+  </div>
+
+  <script>
+    $(function () {
+      // Home 頁面淡入
+      $('#HomeBtn').click(function () {
+        $('#HomeBtn').css('color', 'yellow');
+        $('#AboutMeBtn').css('color', '');
+        $('#AboutMeContent').hide();
+        $('#HomeContent').fadeIn(1000);
+      });
+      // Aboout Me 頁面淡入
+      $('#AboutMeBtn').click(function () {
+        particlesJS.load('AboutMeContent', './json/particlesjs-config.json', function () {
+          console.log('callback - particles.js config loaded');
+        });
+        $('#AboutMeBtn').css('color', 'yellow');
+        $('#HomeBtn').css('color', '');
+        $('#HomeContent').hide();
+        $('#AboutMeContent').fadeIn(1000);      
+       
+      });
+    });
+  </script>
 
 
 </body>

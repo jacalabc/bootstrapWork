@@ -1,11 +1,12 @@
-body{
+body {
     overflow-x: hidden;
 }
 
 /* 首頁內容 */
-h3{
+h3 {
     text-align: center;
 }
+
 .HomeTop {
     width: 100vw;
     height: 30vh;
@@ -18,7 +19,7 @@ h3{
 }
 
 
-#HomeBtn:hover{
+#HomeBtn:hover {
     cursor: pointer;
     color: yellow;
 }
@@ -29,11 +30,11 @@ h3{
     overflow: hidden;
 }
 
-.bigText{
+.bigText {
     font-size: 2rem;
 }
 
-.HomePic1Text{
+.HomePic1Text {
     color: rgb(191, 124, 0);
     border-radius: 30px;
     backdrop-filter: blur(5px);
@@ -41,63 +42,70 @@ h3{
     font-size: 30px;
 }
 
-.HomePic2Text{
+.HomePic2Text {
     border-radius: 30px;
     backdrop-filter: blur(5px);
     bottom: 120px;
     font-size: 30px;
 }
 
-.HomePic3Text{
+.HomePic3Text {
     backdrop-filter: blur(5px);
     border-radius: 30px;
     bottom: 120px;
     font-size: 30px;
 }
 
-.slidebar{
+.slidebar {
     position: relative;
     top: 64vh;
 }
-.HomePic{
+
+.HomePic {
     margin-top: -40px;
     margin-left: -13px;
     margin-right: -13px;
 }
 
-  
+
 
 /* 關於我內容 */
-#AboutMeBtn:hover{
+#AboutMeBtn:hover {
     cursor: pointer;
     color: yellow;
 }
 
 #AboutMeContent {
-    display: none;
+    /* display: none;
     background-image: url("./image/pexels-daniel-spase-734918.jpg"); 
     background-size: 100vw 100%;
+    background-repeat: no-repeat; */
+    display: none;
+    background-color: #e5a840;
+    background-size: 100vw 100%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
 }
-
 
 .pianoimage {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.MusicShareBar{
-    background-color: burlywood;
+
+.MusicShareBar {
+    background-color: #57E693;
     border-radius: 10px;
     font-weight: bold;
     margin: 0 auto;
 }
-.MusicShareText{
+
+.MusicShareText {
     color: rgb(59, 119, 148);
     font-weight: bold;
 }
 
-.copyRight{
+.copyRight {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -106,13 +114,13 @@ h3{
     width: 50%;
     text-align: center;
     backdrop-filter: blur(10px);
-    color:black;
+    color: black;
     font-size: 30px;
 }
 
-.BackTop{
+.BackTop {
     font-size: 50px;
     position: fixed;
     bottom: 30px;
-    right:60px;
+    right: 60px;
 }
